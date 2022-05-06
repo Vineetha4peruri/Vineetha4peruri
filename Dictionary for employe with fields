@@ -1,0 +1,15 @@
+e={1:['vinni','manager',200000,'kakinada'],2:['teju','programmer',100000,'samalkot'],3:['haseena','secretery',50000,'rajamandry'],4:['nandini','developer',50000,'sarpavaram']}
+x=int(input('enter the employe no:'))
+print('name of the employe:',e[x][0])
+print('designantion:',e[x][1])
+print('sal:',e[x][2])
+print('city:',e[x][3])
+Output:
+enter the employe no:3
+name of the employe: haseena
+designantion: secretery
+sal: 50000
+city: rajamandry
+
+[Program finished]
+
