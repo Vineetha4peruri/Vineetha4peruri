@@ -1,0 +1,23 @@
+- 👋 Hi, I’m @Vineetha4peruri
+
+def perfectsquare(x):
+    if (x**(0.5)==int(x**(0.5))):
+        return True
+    return False
+    
+n=int(input())
+l=[]
+d={}
+for i in range(n):
+    l.append(i)
+for i in l:
+    if perfectsquare(i):
+        d[i]='yes'
+    else:
+        d[i]='no'
+print(d)
+Output:
+20
+{0: 'yes', 1: 'yes', 2: 'no', 3: 'no', 4: 'yes', 5: 'no', 6: 'no', 7: 'no', 8: 'no', 9: 'yes', 10: 'no', 11: 'no', 12: 'no', 13: 'no', 14: 'no', 15: 'no', 16: 'yes', 17: 'no', 18: 'no', 19: 'no'}
+
+[Program finished]
