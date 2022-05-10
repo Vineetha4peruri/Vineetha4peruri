@@ -1,0 +1,7 @@
+{1:['abc',24,'mstcs2'],2:['klm',34,'mstcs2'],3:['jkl',56,'mstcs2']}
+d.clear()
+print(d)
+Output:
+{}
+
+[Program finished]
