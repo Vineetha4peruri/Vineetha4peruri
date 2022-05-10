@@ -1,0 +1,30 @@
+n=int(input('Enter number of values:'))
+d1={}
+d2={}
+d3={}
+for i in range(n):
+	sid=int(input("Enter the student id"))
+	snam=input("Enter the student mame")
+	scls=input("Enter the student  class ")
+	sres=float(input("Enter the result of student"))
+	d1[sid]=snam
+	d2[sid]=scls
+	d3[sid]=sres
+print(d1,d2,d3)	
+a=int(input("Enter the student id"))
+d1.pop(a)
+d2.pop(a)
+d3.pop(a)
+print(d1,d2,d3)
+Output:
+Enter number of values:2
+Enter the student id1234
+Enter the student mamevinni
+Enter the student  class mscs
+Enter the result of student30
+Enter the student id1235
+Enter the student mameteju
+Enter the student  class mscs
+Enter the result of student30
+{1234: 'vinni', 1235: 'teju'} {1234: 'mscs', 1235: 'mscs'} {1234: 30.0, 1235: 30.0}
+Enter the student id
