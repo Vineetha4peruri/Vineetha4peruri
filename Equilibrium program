@@ -1,0 +1,44 @@
+### Hi there 👋
+
+<!--
+**Vineetha4peruri/Vineetha4peruri** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+def equilibrium(a):
+
+  if len(a) == 0:
+    return -1
+
+  left_sum = 0
+
+  for i in range(len(a) - 1):
+
+    right_sum = 0
+    middle_point = i + 1
+    left_sum += a[i]
+
+    for j in range(middle_point + 1, len(a)):
+      right_sum += a[j]
+
+    if left_sum == right_sum:
+      return middle_point
+  
+  return -1
+
+print(input()) 
+print(equilibrium([]))
+7
+7
+-1
+
+[Program finished]
