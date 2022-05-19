@@ -15,12 +15,18 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 class Solution:
-    def pivotIndex(self, nums):
-        total = sum(nums)
-        left_sum = 0
-        for a, num in enumerate(nums):
-            if left_sum == (total-left_sum-num):
-                return a
-            left_sum += num
-        return -1
-[Program finished]
+    def subarraysDivByK(self, nums: List[int], k: int) -> int:
+        rs=ans=0
+        dp={0:1}
+        
+        for A in nums:
+            rs+=A
+            key=rs%k
+            
+            if key in dp:
+                ans+=dp[key]
+                dp[key]+=1
+            else:
+                dp[key]=1
+                
+        return ans
