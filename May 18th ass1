@@ -1,0 +1,32 @@
+### Hi there 👋
+
+<!--
+**Vineetha4peruri/Vineetha4peruri** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+class Solution:
+    def subarraysDivByK(self, nums: List[int], k: int) -> int:
+        rs=ans=0
+        dp={0:1}
+        
+        for A in nums:
+            rs+=A
+            key=rs%k
+            
+            if key in dp:
+                ans+=dp[key]
+                dp[key]+=1
+            else:
+                dp[key]=1
+                
+        return ans
